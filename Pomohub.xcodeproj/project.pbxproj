@@ -11,6 +11,8 @@
 		CB2D464E2ACC9E6E00042754 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D464D2ACC9E6E00042754 /* ContentView.swift */; };
 		CB2D46502ACC9E6E00042754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D464F2ACC9E6E00042754 /* Assets.xcassets */; };
 		CB2D46532ACC9E6E00042754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D46522ACC9E6E00042754 /* Preview Assets.xcassets */; };
+		CB44C7372ACE0EB900EF8704 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C7362ACE0EB900EF8704 /* PomodoroViewModel.swift */; };
+		CB44C7392ACE0F9F00EF8704 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C7382ACE0F9F00EF8704 /* Home.swift */; };
 		CB9689C42ACCFECF00E978FC /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +22,8 @@
 		CB2D464D2ACC9E6E00042754 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB2D464F2ACC9E6E00042754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2D46522ACC9E6E00042754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB44C7362ACE0EB900EF8704 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
+		CB44C7382ACE0F9F00EF8704 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */,
+				CB44C7382ACE0F9F00EF8704 /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 		CB9689C12ACCFE5F00E978FC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB44C7362ACE0EB900EF8704 /* PomodoroViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9689C42ACCFECF00E978FC /* AnalogClockView.swift in Sources */,
+				CB44C7372ACE0EB900EF8704 /* PomodoroViewModel.swift in Sources */,
+				CB44C7392ACE0F9F00EF8704 /* Home.swift in Sources */,
 				CB2D464E2ACC9E6E00042754 /* ContentView.swift in Sources */,
 				CB2D464C2ACC9E6E00042754 /* PomohubApp.swift in Sources */,
 			);

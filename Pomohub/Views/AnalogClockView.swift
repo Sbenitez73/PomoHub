@@ -27,7 +27,6 @@ struct AnalogClockView: View {
             let center = CGPoint(x:centerX, y:centerY)
             let components = Calendar.current.dateComponents([.hour, .minute, .second], from: currentTime)
             
-            let hour = Double(components.hour ?? 0)
             let minute = Double(components.minute ?? 0)
             let second = Double(components.second ?? 0)
             
@@ -41,7 +40,7 @@ struct AnalogClockView: View {
             Path { path in
                 for index in 0..<60 {
                     let radian = Angle(degrees: Double(index) * 6 - 90).radians
-                    let lineHeight: Double = index % 5 == 0 ? 25 : 10
+                    let lineHeight: Double = index % 5 == 0 ? 25 : 0
                     
                     let x1 = centerX + innerRadius * cos(radian)
                     let y1 = centerY + innerRadius * sin(radian)
