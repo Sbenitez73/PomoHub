@@ -13,7 +13,8 @@
 		CB2D46532ACC9E6E00042754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D46522ACC9E6E00042754 /* Preview Assets.xcassets */; };
 		CB44C7372ACE0EB900EF8704 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C7362ACE0EB900EF8704 /* PomodoroViewModel.swift */; };
 		CB44C7392ACE0F9F00EF8704 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C7382ACE0F9F00EF8704 /* Home.swift */; };
-		CB9689C42ACCFECF00E978FC /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */; };
+		CBB3B76B2ADB36F3003E6D51 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = CBB3B76A2ADB36F3003E6D51 /* AlertToast */; };
+		CBB3B76E2ADB4590003E6D51 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB3B76D2ADB4590003E6D51 /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,8 @@
 		CB2D464F2ACC9E6E00042754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2D46522ACC9E6E00042754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB44C7362ACE0EB900EF8704 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
-		CB44C7382ACE0F9F00EF8704 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
+		CB44C7382ACE0F9F00EF8704 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBB3B76D2ADB4590003E6D51 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB3B76B2ADB36F3003E6D51 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +81,7 @@
 		CB9689C02ACCFDCD00E978FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CB9689C32ACCFECF00E978FC /* AnalogClockView.swift */,
+				CBB3B76C2ADB4574003E6D51 /* Common */,
 				CB44C7382ACE0F9F00EF8704 /* Home.swift */,
 			);
 			path = Views;
@@ -100,6 +102,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CBB3B76C2ADB4574003E6D51 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3B76D2ADB4590003E6D51 /* NavBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +126,9 @@
 			dependencies = (
 			);
 			name = Pomohub;
+			packageProductDependencies = (
+				CBB3B76A2ADB36F3003E6D51 /* AlertToast */,
+			);
 			productName = Pomohub;
 			productReference = CB2D46482ACC9E6E00042754 /* Pomohub.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +157,9 @@
 				Base,
 			);
 			mainGroup = CB2D463F2ACC9E6D00042754;
+			packageReferences = (
+				CBB3B7692ADB36F3003E6D51 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = CB2D46492ACC9E6E00042754 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -170,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9689C42ACCFECF00E978FC /* AnalogClockView.swift in Sources */,
+				CBB3B76E2ADB4590003E6D51 /* NavBar.swift in Sources */,
 				CB44C7372ACE0EB900EF8704 /* PomodoroViewModel.swift in Sources */,
 				CB44C7392ACE0F9F00EF8704 /* Home.swift in Sources */,
 				CB2D464E2ACC9E6E00042754 /* ContentView.swift in Sources */,
@@ -375,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBB3B7692ADB36F3003E6D51 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBB3B76A2ADB36F3003E6D51 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBB3B7692ADB36F3003E6D51 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB2D46402ACC9E6D00042754 /* Project object */;
 }
